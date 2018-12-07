@@ -1,0 +1,94 @@
+@import '../../../colors.css';
+
+:root {
+  --slider-item-width: 300px;
+  --slider-item-margin-right: 20px;
+  --slider-item-image-height: 165px;
+  --slider-item-outline-offset: 5px;
+  --container-padding: 10px;
+  --offset-width: 4px;
+  --transition-duration: 0.5s;
+  --banner-max-height: 250px;
+  --chevron-size: 30px;
+  --chevron-bottom-offset: -60px;
+  --chevron-bottom-offset-small: -42.5px;
+}
+
+.slider-item {
+  position: relative;
+  font-size: 0.5em;
+  display: inline-block;
+  min-width: var(--slider-item-width);
+  background-color: var(--economist-white, white);
+  margin-right: var(--slider-item-margin-right);
+  transition: margin-left, outline var(--transition-duration);
+  outline: var(--offset-width) solid transparent;
+
+  &--selected {
+    outline-color: var(--economist-white, white);
+    outline-offset: var(--slider-item-outline-offset);
+  }
+
+  &--series-item .slider-item__container {
+    background-color: var(--economist-averagegrey, gray);
+  }
+
+  &__image {
+    min-height: var(--slider-item-image-height);
+    height: auto;
+  }
+
+  &__container {
+    max-width: var(--slider-item-width);
+    padding: var(--container-padding);
+    background-color: var(--economist-red, red);
+    color: var(--economist-white, white);
+  }
+
+  &__title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__subtitle {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.75em;
+  }
+
+  &__chevron {
+    position: absolute;
+    bottom: var(--chevron-bottom-offset);
+    left: calc(var(--slider-item-width) / 2 - var(--chevron-size));
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-left: var(--chevron-size) solid transparent;
+    border-right: var(--chevron-size) solid transparent;
+    border-bottom: var(--chevron-size) solid var(--economist-mediumgrey);
+
+    &--small {
+      position: fixed;
+      bottom: var(--chevron-bottom-offset-small);
+    }
+
+    &--visible {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+  }
+
+  &--full-width {
+    overflow: hidden;
+
+    &::after {
+      overflow: visible;
+    }
+
+    & .slider-item__image {
+      max-height: var(--banner-max-height);
+    }
+  }
+}

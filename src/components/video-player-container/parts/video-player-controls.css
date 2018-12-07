@@ -1,0 +1,128 @@
+@import '../../../colors.css';
+
+:root {
+  --video-controls-icon-margin: 1%;
+  --progress-bar-height: 1em;
+  --video-text-size: 2em;
+  --navigation-margin: 30px;
+  --navigation-icons-size: 8em;
+  --back-button-size: 5.5em;
+  --svg-icon-offset: 7px;
+}
+
+.player-interface {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  transition: opacity 0.4s;
+
+  &--hidden {
+    opacity: 0;
+  }
+
+  &__top {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  }
+
+  &__bottom {
+    padding-top: 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  }
+
+  &__back-button {
+    position: fixed;
+    top: 4%;
+    left: 40px;
+    width: var(--back-button-size);
+    height: var(--back-button-size);
+
+    &.selected {
+      background: var(--economist-red);
+      border-radius: 100%;
+    }
+  }
+
+  &__episode-title {
+    position: fixed;
+    top: 5.5%;
+    left: 120px;
+    font-size: calc(var(--video-text-size) * 1.5);
+  }
+
+  &__progress-time {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4% 15px;
+  }
+
+  &__progress-time--current {
+    font-size: var(--video-text-size);
+  }
+
+  &__progress-time--final {
+    font-size: var(--video-text-size);
+  }
+
+  &__navigation-wrapper {
+    display: block;
+    margin: var(--navigation-margin) 0 calc(var(--navigation-margin) * 2);
+  }
+
+  &__progress-bar-container {
+    background: var(--economist-lightgrey);
+    width: 95%;
+    height: var(--progress-bar-height);
+    margin: 0 2.5%;
+  }
+
+  &__progress-bar {
+    background: var(--economist-red);
+    height: 100%;
+  }
+
+  &__navigation-control {
+    width: var(--navigation-icons-size);
+    height: var(--navigation-icons-size);
+    margin: 0 var(--video-controls-icon-margin);
+    background: var(--economist-grey);
+
+    &.selected {
+      background: var(--economist-red);
+      border-radius: 100%;
+    }
+  }
+
+  &__navigation-icons {
+    font-size: 35px;
+
+    &--back {
+      margin-right: 5px;
+    }
+
+    &--rewind {
+      margin-right: var(--svg-icon-offset);
+    }
+
+    &--forward {
+      margin-left: var(--svg-icon-offset);
+    }
+
+    &--play {
+      font-size: 50px;
+      margin-left: var(--svg-icon-offset);
+    }
+
+    &--pause {
+      font-size: 50px;
+    }
+  }
+}

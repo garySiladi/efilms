@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EpisodeDescription renders correctly 1`] = `
+<div
+  className="episode-description"
+>
+  <h3
+    className="episode-description__subtitle"
+  />
+  <h2
+    className="episode-description__title"
+  />
+  <p
+    className="episode-description__text"
+  />
+</div>
+`;
+
+exports[`EpisodeDescription renders with data 1`] = `
+<div
+  className="episode-description"
+>
+  <h3
+    className="episode-description__subtitle"
+  >
+    subtitle xyz
+  </h3>
+  <h2
+    className="episode-description__title"
+  >
+    title xyz
+  </h2>
+  <p
+    className="episode-description__text"
+  >
+    description xyz
+  </p>
+</div>
+`;

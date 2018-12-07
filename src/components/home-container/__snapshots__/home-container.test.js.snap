@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeContainer:  renders correctly with data and goToEpisode prop enabled 1`] = `
+<div
+  className="home-container"
+  style={
+    Object {
+      "transform": "translate(0px, -350px)",
+    }
+  }
+>
+  <div>
+    Slider
+  </div>
+  <div>
+    Slider
+  </div>
+  <div>
+    EpisodeSelected
+  </div>
+  <div>
+    Slider
+  </div>
+</div>
+`;
+
+exports[`HomeContainer:  renders correctly with data but without goToEpisode enabled 1`] = `
+<div
+  className="home-container"
+  style={
+    Object {
+      "transform": "translate(0px, -350px)",
+    }
+  }
+>
+  <div>
+    Slider
+  </div>
+  <div>
+    Slider
+  </div>
+  <div>
+    EpisodeSelected
+  </div>
+  <div>
+    Slider
+  </div>
+</div>
+`;
+
+exports[`HomeContainer:  renders correctly without data 1`] = `null`;

@@ -1,0 +1,20 @@
+@import '../../colors.css';
+
+:root {
+  --slider-items--transition-duration: 0.3s;
+}
+
+.slider {
+  &-title {
+    display: block;
+    color: var(--economist-white, white);
+    font-size: 0.75em;
+    margin-bottom: 0.5em;
+    position: relative;
+  }
+
+  &-items {
+    display: flex;
+    transition-duration: var(--slider-items--transition-duration);
+  }
+}

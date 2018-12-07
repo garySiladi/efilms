@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image renders with placeholder 1`] = `
+<div
+  className="image image--placeholder"
+>
+  <div
+    className="image__holder"
+  >
+    <img
+      alt="alt"
+      className="xxx"
+      onLoad={[Function]}
+      src="kobzol"
+    />
+  </div>
+</div>
+`;
+
+exports[`Image renders without placeholder 1`] = `
+<div
+  className="image"
+>
+  <div
+    className="image__holder"
+  >
+    <img
+      alt="alt"
+      className="xxx"
+      onLoad={[Function]}
+      src="kobzol"
+    />
+  </div>
+</div>
+`;

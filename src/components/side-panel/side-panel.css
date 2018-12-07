@@ -1,0 +1,64 @@
+@import '../../colors.css';
+
+:root {
+  --side-panel-width: 85px;
+  --side-panel-width-expanded: 300px;
+  --side-panel-option-border: 5px solid var(--economist-red, red);
+}
+
+.side-panel {
+  position: fixed;
+  z-index: 10;
+  width: var(--side-panel-width);
+  height: 100%;
+  background-color: var(--economist-red, red);
+  transition: width 0.2s ease-out, transform 0.3s;
+  box-shadow: 0 0 35px 10px var(--economist-grey, black);
+
+  &__option-list {
+    margin: 100px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__option {
+    width: 100%;
+    padding: 15px 20px;
+
+    &:first-child {
+      margin-bottom: 100px;
+
+      & .side-panel-card__icon {
+        border-radius: 100%;
+      }
+    }
+  }
+
+  &--expanded {
+    width: var(--side-panel-width-expanded);
+
+    & .side-panel__option {
+      border-right: var(--side-panel-option-border);
+      transition: box-shadow 0.2s, border 0.2s;
+
+      &--active {
+        border-right-color: var(--economist-white, white);
+        box-shadow: inset 0 0 10px 4px var(--economist-shadeRed, red);
+      }
+    }
+
+    & .side-panel-card__title {
+      opacity: 1;
+      transition: opacity 0.2s ease-in 0.2s;
+    }
+
+    & .side-panel-card--active .side-panel-card__icon circle {
+      fill: var(--economist-red, red);
+      transition: fill 0.2s ease-in 0.2s;
+    }
+  }
+
+  &--hidden {
+    transform: translateX(-85px);
+  }
+}

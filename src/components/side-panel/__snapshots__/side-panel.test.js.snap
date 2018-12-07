@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SidePanel renders correctly 1`] = `
+<div
+  className="side-panel"
+>
+  <ul
+    className="side-panel__option-list"
+  >
+    <li
+      className="side-panel__option"
+    >
+      <div>
+        Side Panel Card
+      </div>
+    </li>
+    <li
+      className="side-panel__option side-panel__option--active"
+    >
+      <div>
+        Side Panel Card
+      </div>
+    </li>
+    <li
+      className="side-panel__option"
+    >
+      <div>
+        Side Panel Card
+      </div>
+    </li>
+    <li
+      className="side-panel__option"
+    >
+      <div>
+        Side Panel Card
+      </div>
+    </li>
+  </ul>
+</div>
+`;

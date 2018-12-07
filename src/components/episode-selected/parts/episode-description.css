@@ -1,0 +1,38 @@
+@import '../../../colors.css';
+
+:root {
+  --text-line-height: 1.5em;
+  --title-max-height: 1.1em;
+  --line-count: 5;
+  --margin-size-small: 10px;
+  --weight-size: 600;
+}
+
+.episode-description {
+  color: var(--economist-white);
+
+  & > * {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__subtitle {
+    margin-bottom: var(--margin-size-small);
+  }
+
+  &__title {
+    font-weight: var(--weight-size);
+    margin-bottom: var(--margin-size-small);
+    max-height: var(--title-max-height);
+    overflow: hidden;
+  }
+
+  &__text {
+    overflow: hidden;
+    height: calc(var(--text-line-height) * var(--line-count));
+    line-height: var(--text-line-height);
+    text-overflow: ellipsis;
+    -webkit-line-clamp: var(--line-count);
+    -webkit-box-orient: vertical;
+  }
+}

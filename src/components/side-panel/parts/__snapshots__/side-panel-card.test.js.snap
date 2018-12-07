@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SidePanelCard renders with isActive and onClick 1`] = `
+<a
+  className="side-panel-card"
+  onClick={[Function]}
+  style={Object {}}
+>
+  <span
+    aria-hidden={true}
+    className="fa fa-yyy side-panel-card__icon side-panel-card__icon--zzz"
+  />
+  <span
+    className="side-panel-card__title"
+  >
+    zzz
+  </span>
+</a>
+`;
+
+exports[`SidePanelCard renders with minimum props 1`] = `
+<a
+  className="side-panel-card"
+  onClick={[Function]}
+  style={Object {}}
+>
+  <span
+    aria-hidden={true}
+    className="fa fa-yyy side-panel-card__icon side-panel-card__icon--zzz"
+  />
+  <span
+    className="side-panel-card__title"
+  >
+    zzz
+  </span>
+</a>
+`;

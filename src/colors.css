@@ -1,0 +1,12 @@
+:root {
+  --economist-red: #e3120b;
+  --economist-redWine: #88120b;
+  --economist-shadeRed: #940b09;
+  --economist-grey: #121212;
+  --economist-white: #f2f2f2;
+  --economist-mediumgrey: #353535;
+  --economist-lightgrey: #d7d7d7;
+  --economist-averagegrey: #808080;
+  --economist-blackOpacity: rgba(0, 0, 0, 0.91);
+  --economist-blue: #23527c;
+}

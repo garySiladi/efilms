@@ -1,0 +1,145 @@
+@import '../../colors.css';
+
+:root {
+  --offset-size: 20px;
+  --offset-size-small: 10px;
+  --info-container-width: 45%;
+  --button-width: 48%;
+  --button-font-size: 1.5em;
+  --button-line-height: 2em;
+  --button-margin-width: 2%;
+  --video-teaser-height: 350px;
+  --opacityUnselect: 0.5;
+  --opacitySelect: 1;
+  --slider-item-outline-offset: 5px;
+  --transition-duration: 0.3s;
+  --play-button-offset: 25px;
+  --animation-iteration-count: 2;
+  --outline-width: 4px;
+  --popup-width: 95%;
+}
+
+.episode-selected {
+  margin: var(--offset-size);
+  width: var(--popup-width);
+  background-color: var(--economist-mediumgrey);
+  position: absolute;
+  transition: var(--transition-duration);
+  opacity: 0;
+
+  &--expanded {
+    opacity: 1;
+  }
+
+  &__image {
+    position: absolute;
+    transition: opacity, transform var(--transition-duration);
+    right: var(--play-button-offset);
+    bottom: var(--play-button-offset);
+    transform: rotate(45deg) scale(0.7);
+    opacity: var(--opacityUnselect);
+
+    & .expand-button__arrow {
+      font-size: 40px;
+      color: white;
+      opacity: 0.9;
+      text-shadow: -3px 0 2px var(--economist-averagegrey), 0 3px 2px var(--economist-averagegrey), 3px 0 2px var(--economist-averagegrey), 0 -3px 2px var(--economist-averagegrey);
+
+      &--second {
+        transform: rotate(180deg) translate(-20px);
+      }
+    }
+  }
+
+  &__image--selected {
+    opacity: var(--opacitySelect);
+
+    & .expand-button__arrow {
+      &--first {
+        animation: firstArrowMovement calc(var(--transition-duration) + 0.1s);
+        animation-iteration-count: var(--animation-iteration-count);
+        animation-delay: var(--transition-duration);
+        animation-direction: alternate;
+      }
+
+      &--second {
+        animation: secondArrowMovement calc(var(--transition-duration) + 0.1s);
+        animation-iteration-count: var(--animation-iteration-count);
+        animation-delay: var(--transition-duration);
+        animation-direction: alternate;
+      }
+    }
+  }
+
+  &__teaser-wrapper {
+    width: 50%;
+    position: relative;
+    margin: var(--offset-size);
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__info-container {
+    width: var(--info-container-width);
+    display: inline-block;
+    padding: var(--offset-size);
+    padding-left: 0;
+  }
+}
+
+.episode-buttons {
+  position: absolute;
+  bottom: var(--offset-size);
+  width: var(--info-container-width);
+
+  &__watch,
+  &__learn {
+    text-align: center;
+    display: inline-block;
+    font-size: var(--button-font-size);
+    line-height: var(--button-line-height);
+    width: var(--button-width);
+    padding: var(--offset-size-small);
+    background-color: var(--economist-red);
+    color: var(--economist-white);
+    transition: outline var(--transition-duration);
+    outline: var(--outline-width) solid transparent;
+    outline-offset: var(--slider-item-outline-offset);
+  }
+
+  &__watch--selected,
+  &__learn--selected {
+    outline-color: var(--economist-white, white);
+  }
+
+  &__watch {
+    margin-right: var(--button-margin-width);
+  }
+}
+
+.video-container {
+  height: var(--video-teaser-height);
+  width: 100%;
+  transition: width 0.4s 0.1s, height 0.4s 0.1s, transform 0.5s;
+}
+
+.video-container--expanded {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  transform: translateY(-410px);
+  left: -50px;
+  z-index: 999;
+
+  & .video-js {
+    background-color: black;
+  }
+}
+
+@keyframes firstArrowMovement {
+  to { transform: translate(-15px) scale(1.4); }
+}
+
+@keyframes secondArrowMovement {
+  to { transform: rotate(180deg) translate(-35px) scale(1.4); }
+}

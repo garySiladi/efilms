@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeContainer  hides buttons 1`] = `
+<div
+  className="episode-selected episode-selected--expanded"
+>
+  <div
+    className="episode-selected__teaser-wrapper"
+  >
+    <div
+      className="video-container"
+    >
+      <div>
+        VideoPlayer
+      </div>
+    </div>
+    <div
+      className="episode-selected__image episode-selected__image--selected"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-chevron-left expand-button__arrow expand-button__arrow--first"
+      />
+      <span
+        aria-hidden={true}
+        className="fa fa-chevron-left expand-button__arrow expand-button__arrow--second"
+      />
+    </div>
+  </div>
+  <div
+    className="episode-selected__info-container"
+  >
+    <div>
+      EpisodeDescription
+    </div>
+    <div
+      className="episode-buttons"
+    >
+      <div
+        className="episode-buttons__learn"
+      >
+        Learn More
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`HomeContainer  renders with data 1`] = `
+<div
+  className="episode-selected episode-selected--expanded"
+>
+  <div
+    className="episode-selected__teaser-wrapper"
+  >
+    <div
+      className="video-container"
+    >
+      <div>
+        VideoPlayer
+      </div>
+    </div>
+    <div
+      className="episode-selected__image episode-selected__image--selected"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-chevron-left expand-button__arrow expand-button__arrow--first"
+      />
+      <span
+        aria-hidden={true}
+        className="fa fa-chevron-left expand-button__arrow expand-button__arrow--second"
+      />
+    </div>
+  </div>
+  <div
+    className="episode-selected__info-container"
+  >
+    <div>
+      EpisodeDescription
+    </div>
+  </div>
+</div>
+`;
+
+exports[`HomeContainer:  renders correctly with data and goToEpisode prop enabled 1`] = `
+<div
+  className="home-container"
+  style={
+    Object {
+      "transform": "translate(0px, -350px)",
+    }
+  }
+>
+  <div>
+    Slider
+  </div>
+  <div>
+    Slider
+  </div>
+  <div>
+    EpisodeSelected
+  </div>
+  <div>
+    Slider
+  </div>
+</div>
+`;
+
+exports[`HomeContainer:  renders correctly with data but without goToEpisode enabled 1`] = `
+<div
+  className="home-container"
+  style={
+    Object {
+      "transform": "translate(0px, -350px)",
+    }
+  }
+>
+  <div>
+    Slider
+  </div>
+  <div>
+    Slider
+  </div>
+  <div>
+    EpisodeSelected
+  </div>
+  <div>
+    Slider
+  </div>
+</div>
+`;
+
+exports[`HomeContainer:  renders correctly without data 1`] = `null`;

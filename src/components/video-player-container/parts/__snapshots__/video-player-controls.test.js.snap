@@ -1,0 +1,413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video is not playing  1`] = `
+<div
+  className="player-interface"
+>
+  <div
+    className="player-interface__top"
+  >
+    <button
+      className="player-interface__back-button selected"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-chevron-left player-interface__navigation-icons player-interface__navigation-icons--back"
+      />
+    </button>
+    <span
+      className="player-interface__episode-title"
+    >
+      Whatever
+    </span>
+  </div>
+  <div
+    className="player-interface__bottom"
+  >
+    <div
+      className="player-interface__progress-time"
+    >
+      <div
+        className="player-interface__progress-time--current"
+      >
+        10:10
+      </div>
+      <div
+        className="player-interface__progress-time--final"
+      >
+        20:20
+      </div>
+    </div>
+    <div
+      className="player-interface__progress-bar-container"
+    >
+      <div
+        className="player-interface__progress-bar"
+        style={
+          Object {
+            "width": "0%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="player-interface__navigation-wrapper"
+    >
+      <button
+        className="player-interface__navigation-control selected"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-step-backward player-interface__navigation-icons player-interface__navigation-icons--step-backward"
+          id="1"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-backward player-interface__navigation-icons player-interface__navigation-icons--rewind"
+          id="2"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-play player-interface__navigation-icons player-interface__navigation-icons--play"
+          id="3"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-forward player-interface__navigation-icons player-interface__navigation-icons--forward"
+          id="4"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-step-forward player-interface__navigation-icons player-interface__navigation-icons--step-forward"
+          id="5"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Video is playing + selected postition is 0 1`] = `
+<div
+  className="player-interface"
+>
+  <div
+    className="player-interface__top"
+  >
+    <button
+      className="player-interface__back-button selected"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-chevron-left player-interface__navigation-icons player-interface__navigation-icons--back"
+      />
+    </button>
+    <span
+      className="player-interface__episode-title"
+    >
+      Whatever
+    </span>
+  </div>
+  <div
+    className="player-interface__bottom"
+  >
+    <div
+      className="player-interface__progress-time"
+    >
+      <div
+        className="player-interface__progress-time--current"
+      >
+        10:10
+      </div>
+      <div
+        className="player-interface__progress-time--final"
+      >
+        20:20
+      </div>
+    </div>
+    <div
+      className="player-interface__progress-bar-container"
+    >
+      <div
+        className="player-interface__progress-bar"
+        style={
+          Object {
+            "width": "0%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="player-interface__navigation-wrapper"
+    >
+      <button
+        className="player-interface__navigation-control selected"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-step-backward player-interface__navigation-icons player-interface__navigation-icons--step-backward"
+          id="1"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-backward player-interface__navigation-icons player-interface__navigation-icons--rewind"
+          id="2"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-pause player-interface__navigation-icons player-interface__navigation-icons--pause"
+          id="3"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-forward player-interface__navigation-icons player-interface__navigation-icons--forward"
+          id="4"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-step-forward player-interface__navigation-icons player-interface__navigation-icons--step-forward"
+          id="5"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Video is playing + selected postition is 1 1`] = `
+<div
+  className="player-interface"
+>
+  <div
+    className="player-interface__top"
+  >
+    <button
+      className="player-interface__back-button selected"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-chevron-left player-interface__navigation-icons player-interface__navigation-icons--back"
+      />
+    </button>
+    <span
+      className="player-interface__episode-title"
+    >
+      Whatever
+    </span>
+  </div>
+  <div
+    className="player-interface__bottom"
+  >
+    <div
+      className="player-interface__progress-time"
+    >
+      <div
+        className="player-interface__progress-time--current"
+      >
+        10:10
+      </div>
+      <div
+        className="player-interface__progress-time--final"
+      >
+        20:20
+      </div>
+    </div>
+    <div
+      className="player-interface__progress-bar-container"
+    >
+      <div
+        className="player-interface__progress-bar"
+        style={
+          Object {
+            "width": "0%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="player-interface__navigation-wrapper"
+    >
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-step-backward player-interface__navigation-icons player-interface__navigation-icons--step-backward"
+          id="1"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control selected"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-backward player-interface__navigation-icons player-interface__navigation-icons--rewind"
+          id="2"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-pause player-interface__navigation-icons player-interface__navigation-icons--pause"
+          id="3"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-forward player-interface__navigation-icons player-interface__navigation-icons--forward"
+          id="4"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-step-forward player-interface__navigation-icons player-interface__navigation-icons--step-forward"
+          id="5"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Video is playing + selected postition is 2 1`] = `
+<div
+  className="player-interface"
+>
+  <div
+    className="player-interface__top"
+  >
+    <button
+      className="player-interface__back-button selected"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-chevron-left player-interface__navigation-icons player-interface__navigation-icons--back"
+      />
+    </button>
+    <span
+      className="player-interface__episode-title"
+    >
+      Whatever
+    </span>
+  </div>
+  <div
+    className="player-interface__bottom"
+  >
+    <div
+      className="player-interface__progress-time"
+    >
+      <div
+        className="player-interface__progress-time--current"
+      >
+        10:10
+      </div>
+      <div
+        className="player-interface__progress-time--final"
+      >
+        20:20
+      </div>
+    </div>
+    <div
+      className="player-interface__progress-bar-container"
+    >
+      <div
+        className="player-interface__progress-bar"
+        style={
+          Object {
+            "width": "0%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="player-interface__navigation-wrapper"
+    >
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-step-backward player-interface__navigation-icons player-interface__navigation-icons--step-backward"
+          id="1"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-backward player-interface__navigation-icons player-interface__navigation-icons--rewind"
+          id="2"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control selected"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-pause player-interface__navigation-icons player-interface__navigation-icons--pause"
+          id="3"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-forward player-interface__navigation-icons player-interface__navigation-icons--forward"
+          id="4"
+        />
+      </button>
+      <button
+        className="player-interface__navigation-control"
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-step-forward player-interface__navigation-icons player-interface__navigation-icons--step-forward"
+          id="5"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

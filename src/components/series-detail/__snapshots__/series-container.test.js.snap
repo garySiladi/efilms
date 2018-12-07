@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeriesContainer SeriesContainer renders without data 1`] = `
+<div
+  className="series-container"
+>
+  <div
+    className="series-container__back-button series-container__back-button--hidden"
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-chevron-left"
+    />
+  </div>
+  <div
+    className="series-container__background"
+    style={null}
+  />
+  <div
+    className="gradient-cover"
+  />
+  <div
+    className="series-content series-content--expanded"
+  />
+</div>
+`;
+
+exports[`SeriesContainer renders correctly 1`] = `
+<div
+  className="series-container"
+>
+  <div
+    className="series-container__back-button series-container__back-button--hidden"
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-chevron-left"
+    />
+  </div>
+  <div
+    className="series-container__background"
+    style={null}
+  />
+  <div
+    className="gradient-cover"
+  />
+  <div
+    className="series-content series-content--expanded"
+  />
+</div>
+`;

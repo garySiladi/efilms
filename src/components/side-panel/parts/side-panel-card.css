@@ -1,0 +1,33 @@
+:root {
+  --icon-size: 45px;
+  --economist-color: #e3120b;
+}
+
+.side-panel-card {
+  display: flex;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+
+  &__icon {
+    flex: 0 0 auto;
+    width: var(--icon-size);
+    height: var(--icon-size);
+  }
+
+  &__title {
+    display: table-cell;
+    opacity: 0;
+    width: 180px;
+    height: var(--icon-size);
+    padding-left: 20px;
+    color: white;
+    font-size: 28px;
+    line-height: var(--icon-size);
+    vertical-align: middle;
+    white-space: nowrap;
+    transition: opacity 0s;
+  }
+}

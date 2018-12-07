@@ -1,0 +1,20 @@
+@import '../../index.css';
+@import '../../colors.css';
+
+.image {
+  &--placeholder {
+    background-color: var(--economist-blackOpacity);
+    background-image: var(--economist-placeholder);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__holder {
+    opacity: 0;
+    transition: opacity 1s;
+
+    &--loaded {
+      opacity: 1;
+    }
+  }
+}

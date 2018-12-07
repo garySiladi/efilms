@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SliderItem renders correctly 1`] = `
+<div
+  className="slider-item"
+>
+  <div
+    className="image image--placeholder"
+  >
+    <div
+      className="image__holder"
+    >
+      <img
+        alt="Episode 6 Title"
+        className="slider-item__image"
+        onLoad={[Function]}
+        src="url"
+      />
+    </div>
+  </div>
+  <div
+    className="slider-item__container"
+  >
+    <div
+      className="slider-item__title"
+    >
+      Episode 6 Title
+    </div>
+    <div
+      className="slider-item__subtitle"
+    >
+      subtitle
+    </div>
+  </div>
+  <div
+    className="slider-item__chevron"
+  />
+</div>
+`;
+
+exports[`SliderItem renders correctly 2`] = `
+<div
+  className="slider-item slider-item--series-item"
+>
+  <div
+    className="image image--placeholder"
+  >
+    <div
+      className="image__holder"
+    >
+      <img
+        alt="Series 1 Title"
+        className="slider-item__image"
+        onLoad={[Function]}
+        src="url"
+      />
+    </div>
+  </div>
+  <div
+    className="slider-item__container"
+  >
+    <div
+      className="slider-item__title"
+    >
+      Series 1 Title
+    </div>
+    <div
+      className="slider-item__subtitle"
+    >
+      10 episodes
+    </div>
+  </div>
+  <div
+    className="slider-item__chevron"
+  />
+</div>
+`;
+
+exports[`SliderItem renders correctly 3`] = `
+<div
+  className="slider-item slider-item--selected"
+>
+  <div
+    className="image image--placeholder"
+  >
+    <div
+      className="image__holder"
+    >
+      <img
+        alt="Episode 19 Title"
+        className="slider-item__image"
+        onLoad={[Function]}
+        src=""
+      />
+    </div>
+  </div>
+  <div
+    className="slider-item__container"
+  >
+    <div
+      className="slider-item__title"
+    >
+      Episode 19 Title
+    </div>
+    <div
+      className="slider-item__subtitle"
+    >
+      subtitle
+    </div>
+  </div>
+  <div
+    className="slider-item__chevron"
+  />
+</div>
+`;
+
+exports[`SliderItem renders correctly 4`] = `
+<div
+  className="slider-item"
+>
+  <div
+    className="image image--placeholder"
+  >
+    <div
+      className="image__holder"
+    >
+      <img
+        alt="Episode 19 Title"
+        className="slider-item__image"
+        onLoad={[Function]}
+        src=""
+      />
+    </div>
+  </div>
+  <div
+    className="slider-item__container"
+  >
+    <div
+      className="slider-item__title"
+    >
+      Episode 19 Title
+    </div>
+    <div
+      className="slider-item__subtitle"
+    >
+      subtitle
+    </div>
+  </div>
+  <div
+    className="slider-item__chevron slider-item__chevron--visible"
+  />
+</div>
+`;
+
+exports[`SliderItem renders correctly when full-width 1`] = `
+<div
+  className="slider-item slider-item--full-width"
+>
+  <div
+    className="image image--placeholder"
+  >
+    <div
+      className="image__holder"
+    >
+      <img
+        alt="Episode 1 Title"
+        className="slider-item__image"
+        onLoad={[Function]}
+        src="url"
+      />
+    </div>
+  </div>
+  <div
+    className="slider-item__chevron slider-item__chevron--small"
+  />
+</div>
+`;
+
+exports[`SliderItem renders correctly when full-width 2`] = `
+<div
+  className="slider-item slider-item--full-width"
+>
+  <div
+    className="image image--placeholder"
+  >
+    <div
+      className="image__holder"
+    >
+      <img
+        alt="Episode 2 Title"
+        className="slider-item__image"
+        onLoad={[Function]}
+        src=""
+      />
+    </div>
+  </div>
+  <div
+    className="slider-item__chevron slider-item__chevron--small"
+  />
+</div>
+`;

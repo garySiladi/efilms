@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeriesDescription renders with data 1`] = `
+<div
+  className="series-description__parent"
+>
+  <div
+    className="series-description"
+  >
+    <div
+      className="series-description__series-logo series-description__flex-child"
+    >
+      <div
+        className="image"
+      >
+        <div
+          className="image__holder"
+        >
+          <img
+            alt="series logo"
+            className="series-description__logo-img"
+            onLoad={[Function]}
+            src="u1"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="series-description__description series-description__flex-child"
+    >
+      aaa
+    </div>
+    <div
+      className="series-description__right-wrapper series-description__flex-child"
+    >
+      <div
+        className="series-description__sponsor-logo"
+      >
+        <div
+          className="image"
+        >
+          <div
+            className="image__holder"
+          >
+            <img
+              alt="series logo"
+              className="series-description__logo-img"
+              onLoad={[Function]}
+              src="u2"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="series-description__watchnow-btn"
+        role="button"
+        to="/"
+      >
+        Watch now
+      </div>
+    </div>
+  </div>
+</div>
+`;
